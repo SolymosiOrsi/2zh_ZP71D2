@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Termékkezelő</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input {
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 8px 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Termékkezelő</h1>
+
+  <label for="nevInput">Név:</label>
+  <input type="text" id="nevInput" />
+
+  <label for="arInput">Ár:</label>
+  <input type="number" id="arInput" />
+
+  <button id="hozzaadButton">Hozzáadás</button>
+
+  <div id="eredmenyDiv"></div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Név</th>
+        <th>Ár</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="tablaBody"></tbody>
+  </table>
+
+  <script type="text/javascript" src="termek.js"></script>
+
+</body>
+</html>
